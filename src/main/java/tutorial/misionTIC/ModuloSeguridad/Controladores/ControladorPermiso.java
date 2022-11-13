@@ -8,9 +8,6 @@ import tutorial.misionTIC.ModuloSeguridad.Repositorios.RepositorioPermiso;
 
 import java.util.List;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 @CrossOrigin
 @RestController
 @RequestMapping("/permisos")
@@ -58,6 +55,5 @@ public class ControladorPermiso {
         if (permisoActual!=null){
             this.miRepositorioPermiso.delete(permisoActual);
         }
-
     }
 }

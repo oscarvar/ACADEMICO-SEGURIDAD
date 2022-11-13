@@ -29,8 +29,8 @@ public class ControladorRol {
     @GetMapping("{id}")
     public Rol show(@PathVariable String id){
         Rol rolActual=this.miRepositorioRol
-                        .findById(id)
-                        .orElse(null);
+                .findById(id)
+                .orElse(null);
         return rolActual;
     }
     @PutMapping("{id}")
